@@ -12,11 +12,11 @@
             color: white;
             font-size:10vw;
         }
-        .aberto {background-color: #1a72e6;}
-        .fechado {background-color: #ff5252;}
+        .Aberto {background-color: #1a72e6;}
+        .Fechado {background-color: #ff5252;}
     </style>
 </head>
-    <body class="fechado">
+    <body class="Fechado">
         <div class="container text-center m-auto p-5">
             <p>Fechado</p>
         </div>
@@ -25,18 +25,18 @@
         const paragrafo = document.querySelector('p');
             const body = document.querySelector('body');
 
-            function mudarCor() {
-                if (body.className == 'fechado') {
-                    body.className = 'aberto';
+            function mudarColor() {
+                if (body.className == 'Fechado') {
+                    body.className = 'Aberto';
                     paragrafo.innerText = 'Aberto';
                 } else {
-                    body.className = 'fechado';
+                    body.className = 'Fechado';
                     paragrafo.innerText = 'Fechado';
                 }
 
             }
 
-            paragrafo.addEventListener('click', mudarCor);
+            paragrafo.addEventListener('click', mudarColor);
 
 
         </script>
